@@ -1,0 +1,1012 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+<meta name="keywords" content="SunPlus HTML5 Template">
+<meta name="description" content="SunPlus HTML5 Template">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta property="og:title" content="">
+<meta property="og:description" content="">
+<meta property="og:image" content="">
+<title>Add Quick Quote | JK Solar Xpert</title>
+<!-- Apple Favicon -->
+<link rel="apple-touch-icon" href="https://jksolarxpert.com/public/front/assets/images/favicon.ico">
+<!-- All Device Favicon -->
+<link rel="icon" href="https://jksolarxpert.com/public/front/assets/images/favicon.ico">
+<!-- Icon -->
+<link rel="stylesheet" href="https://jksolarxpert.com/public/front/assets/all-icons/myicon.css">
+<!-- Bootstrap -->
+<link rel="stylesheet" href="https://jksolarxpert.com/public/front/assets/css/bootstrap.min.css">
+<!-- Plugin -->
+<link rel="stylesheet" href="https://jksolarxpert.com/public/front/assets/css/plugins.css">
+<!-- Style -->
+<link rel="stylesheet" href="https://jksolarxpert.com/public/front/assets/css/style3.css">
+<!-- Responsive -->
+<link rel="stylesheet" href="https://jksolarxpert.com/public/front/assets/css/responsive1.css">
+<link rel="stylesheet" href="https://jksolarxpert.com/public/front/assets/css/user-dashboard1.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+
+
+<style>
+    #google_translate_element select{
+        padding: 7px 7px;
+        height: 30px;
+        border-radius: 5px;
+    }
+
+    /* Hide Powered by Google and logo */
+    .goog-logo-link, .goog-te-gadget span {
+        display: none !important;
+    }
+    .goog-te-gadget {
+        color: transparent !important;
+    }
+      /* Add red border for error */
+    .error-input {
+        border: 1px solid #FF474C !important;  /* Red border */
+    }
+    
+    /* Add green border for success */
+    .success-input {
+        border: 1px solid green !important;  /* Green border */
+    }
+</style>    <style>
+    .text-justify
+    {
+        text-align:justify !important;
+    }
+     .form-card-image
+     {
+         background-image: url("https://jksolarxpert.com/public/front/assets/images/bg/dealer-bg.jpg"); /* Replace with the actual background image URL */
+    
+     }
+     .form-card-body {
+    padding: 1rem;
+}
+     .text-iju{
+        margin-top: 20px;
+        margin-bottom: 20px;
+        font-size: 20px;
+     }
+     .special-italic{
+         font-style:italic;
+     }
+     .g-20{
+         gap:20px
+     }
+     .form-group{
+         display:flex;
+     }
+     .form-group label {
+        font-weight: 30.
+        000;
+        color: #000;
+        font-size: 15px;
+        margin-top: 12px;
+    }
+    .form-control1 {
+    height: 35px;
+    width: 80%;
+    outline: none;
+    border-radius: 0px;
+    border: none;
+    border-bottom: 1px solid #dbdbdb;
+    padding: 5px 10px;
+    font-size: 15px;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+    margin-top: 7px;
+    margin-bottom: 15px;
+}
+    .form-control2 {
+        height: 35px;
+        width: 50%;
+        outline: none;
+        border-radius: 0px;
+        border: none;
+    border-bottom: 1px solid #dbdbdb;
+        padding: 5px 10px;
+        font-size: 15px;
+        border-bottom-width: 2px;
+        transition: all 0.3s ease;
+        margin-top: 7px;
+        margin-bottom: 15px;
+    }
+    .form-control3 {
+        height: 35px;
+        width: 50%;
+        outline: none;
+        border-radius: 0px;
+        border: none;
+    border-bottom: 1px solid #dbdbdb;
+        padding: 5px 10px;
+        font-size: 15px;
+        border-bottom-width: 2px;
+        transition: all 0.3s ease;
+        margin-top: 7px;
+        margin-bottom: 15px;
+    }
+    .w-100{
+        width:100% !important;
+    }
+    .w-80{
+        width:80% !important;
+    }
+    .w-70{
+        width:70% !important;
+    }
+    .inline {
+    	display: inline;
+    	/*width: auto;*/
+    	max-width: 30%;
+    }
+    .note-text{
+        display: inline;
+    }
+    @media (max-width:768px){
+        .text-iju{
+            font-size:15px;
+        }
+        .qq-box-1 {
+            margin-top: 10px;
+        }
+        .note-text{
+            font-size:15px;
+        }
+    }
+    @media(max-width:600px)
+    {
+        .form-control1 {
+    width: 65%;
+    }
+     .form-control2 {
+    width: 65%;
+    }
+    label
+    {
+        width:35%;
+    }
+    }
+    
+    /* Screen: hide the print-only view */
+    #print-view { display: none; }
+
+    /* Print: hide everything EXCEPT #print-view */
+    @media print {
+        * { -webkit-print-color-adjust: exact !important; print-color-adjust: exact !important; }
+
+        body > *, section, main, #root,
+        #quote-to-download, .card, .form-card,
+        .form-card-body, .container-fluid,
+        #downloadPdfBtn, button[type="submit"],
+        .sidebar, nav, header, footer,
+        .breadcum, .breadcrumb,
+        .menu-toggle, .menu-close,
+        #google_translate_element { display: none !important; }
+
+        #print-view { display: block !important; }
+
+        @page { size: A4 portrait; margin: 8mm 10mm; }
+
+        html, body {
+            margin: 0; padding: 0;
+            background: #fff !important;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 9pt;
+            color: #000;
+        }
+
+        #print-view img.pv-header { width: 100%; display: block; margin-bottom: 4px; }
+        #print-view .pv-tagline { font-size: 9pt; font-style: italic; margin: 4px 0 6px 0; }
+        #print-view .pv-tagline b { font-style: italic; }
+
+        #print-view .pv-table {
+            width: 100%; border-collapse: collapse; font-size: 8.5pt; margin-bottom: 4px;
+        }
+        #print-view .pv-table td {
+            border: 1px solid #333; padding: 3px 5px; vertical-align: middle;
+        }
+        #print-view .pv-table .pv-num {
+            width: 22px; text-align: center; font-weight: bold;
+        }
+        #print-view .pv-table .pv-label { font-weight: bold; white-space: nowrap; }
+
+        #print-view .pv-disclaimer { font-size: 7.5pt; color: #c00; margin: 3px 0; }
+
+        #print-view .pv-icons {
+            display: flex !important; justify-content: space-around;
+            align-items: center; margin: 4px 0;
+            font-weight: bold; font-size: 8.5pt;
+        }
+        #print-view .pv-icons span { display: flex; align-items: center; gap: 4px; }
+        #print-view .pv-icons img  { width: 28px; height: 28px; }
+
+        #print-view .pv-boxes { display: flex !important; width: 100%; margin-bottom: 4px; }
+        #print-view .pv-box {
+            flex: 1; border: 1px solid #333; padding: 4px 6px; font-size: 8pt;
+        }
+        #print-view .pv-box + .pv-box { border-left: none; }
+        #print-view .pv-box-head {
+            background: #27325C; color: #fff;
+            text-align: center; font-weight: bold; font-size: 8.5pt;
+            padding: 3px; margin: -4px -6px 4px -6px;
+        }
+
+        #print-view .pv-remark { font-size: 8pt; margin: 3px 0; }
+        #print-view .pv-note   { font-size: 7.5pt; text-align: justify; margin: 4px 0; }
+
+        #print-view .pv-sig-table {
+            width: 100%; border-collapse: collapse; margin-top: 6px;
+        }
+        #print-view .pv-sig-table td {
+            border: 1px solid #333; padding: 14px 6px 4px 6px;
+            text-align: center; font-size: 8pt; font-weight: bold;
+            text-decoration: underline; width: 20%;
+        }
+    }
+    </style>
+</head>
+
+<body>
+    <div id="root">
+            
+        <section class="about-us shape-move v1 pt-50 pt-md-50 pt-xl-50 pt-xxl-50 pb-50">
+            <div class="container-fluid">
+                 
+        <div class="row justify-content-center align-items-center">
+            <div class="col-md-11">
+                <div class="card form-card">
+                    <div class="row no-gutters">
+                        <div class="col-md-12">
+                            <div class="form-card-body">
+                                <div class="row">
+    <div class="col-12">
+	    		    </div>
+</div>                                <div id="quote-to-download">
+                                <div class="row">
+                                    <div class="col-12">
+                                <img src="assets/images/JKPGQQ_HEAD.jpg" alt="JK Powerguard Quick Quote Header" class="img-fluid" style="width:100%; display:block; margin-bottom:10px;">
+                                <img src="https://jksolarxpert.com/public/front/assets/images/home/quick-quote-from-header.png" class="img-fluid">
+                                
+                                <p class="text-iju"><b class="special-italic">Simplifying Solar Solutions : </b> We believe in transparency and clarity. That's why we don't overwhelm our clients with lengthy, multi pager & complicated quotes.We handle the complex analysis & provide an easy-to-understand, eco-friendly quote.</p>
+                                
+                                <form   method="post" action="https://jksolarxpert.com/submit-quick-quote" enctype="multipart/form-data">
+                                    <div class="row mt-40">
+                                    <div class="form-group col-lg-6">
+                                        <label for="consname"> Cons. Name:<span class="text-danger">*</span> &nbsp; </label>
+                                        <input type="text" class="form-control1" id="cusName" name="cusName" required>
+                                    </div>
+                                    <div class="form-group col-lg-6">
+                                        <label for="consno"> Cons. No.:</label>
+                                        <input class="form-control1" id="cusPhone"  name="cusPhone">
+                                        <!--<input class="form-control1" id="cusPhone" maxlength="14" minlength="14" oninput="this.value = this.value.slice(0, 14)"  name="cusPhone" pattern="[a-zA-Z0-9]{14}" title="Please enter exactly 14 digits." >-->
+                                    </div>
+                                    <div class="form-group col-lg-6">
+                                        <label for="consno"> Sancn. Load: </label>
+                                        <input type="text" class="form-control1" id="sancnLoad" name="sancnLoad" >
+                                    </div>
+                                    <div class="form-group col-lg-6">
+                                        <label for=""> Any Change:</label>
+                                        <input type="text" class="form-control1" id="anyChange" name="anyChange" >
+                                    </div>
+                                    
+                                    <div class="form-group col-lg-2">
+                                        <label for=""> Peak:</label>
+                                        <input type="text" class="form-control1" id="peak" name="peak" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/^(\d*\.\d*).*$/, '$1');"  >
+                                    </div>
+                                    <div class="form-group col-lg-2">
+                                        <label for=""> Avg.: </label>
+                                        <input type="text" class="form-control1" id="avg" name="avg" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/^(\d*\.\d*).*$/, '$1');"   >
+                                    </div>
+                                    <div class="form-group align-items-center col-lg-4">
+                                        <label for=""> Sugg.:<span class="text-danger">*</span> &nbsp; </label>
+                                        <input type="text" class="form-control1" id="" name="sugg" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/^(\d*\.\d*).*$/, '$1');"   required> /
+                                        <input type="text" class="form-control1" id="" name="sugg1" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/^(\d*\.\d*).*$/, '$1');"   required> kw
+                                    </div>
+                                    <div class="form-group align-items-center col-lg-4">
+                                        <label for=""> Finalised: </label>
+                                        <input type="text" class="form-control1" id="" name="finalised" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/^(\d*\.\d*).*$/, '$1');" >/
+                                        <input type="text" class="form-control1" id="" name="finalised1" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/^(\d*\.\d*).*$/, '$1');" >kw
+                                    </div>
+                                    <div class="form-group col-lg-4">
+                                        <label for=""> Inverter: </label>
+                                        <input type="text" class="form-control1" id="" name="inverter" >
+                                    </div>
+                                    <div class="form-group col-lg-4">
+                                        <label for=""> Rating: </label>
+                                        <input type="text" class="form-control1" id="" name="rating" >
+                                    </div>
+                                    <div class="form-group col-lg-4">
+                                        <label for=""> Battery: </label>
+                                        <input type="text" class="form-control1" id="" name="battery" >
+                                    </div>
+                                    <div class="form-group col-lg-4">
+                                        <label for=""> Warranty: </label>
+                                        <input type="text" class="form-control1" id="" name="warranty" >
+                                    </div>
+                                    <div class="form-group col-lg-3">
+                                        <label for=""> Panel: </label>
+                                        <input type="text" class="form-control1" id="" name="panel" >
+                                    </div>
+                                    <div class="form-group col-lg-3">
+                                        <label for=""> Type:</label>
+                                        <input type="text" class="form-control1" id="" name="type" >
+                                    </div>
+                                    <div class="form-group col-lg-6">
+                                        <label for=""> wp:<span class="text-danger">*</span> &nbsp; </label>
+                                        <input type="text" class="form-control1" id="wp" name="wp"  oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/^(\d*\.\d*).*$/, '$1'); calculatewp();"   required>
+                                        <label for="">&nbsp;X &nbsp;</label>
+                                    <!--</div>-->
+                                    <!--<div class="form-group col-lg-2">-->
+                                        
+                                        <input type="text" class="form-control1" id="nopanel" name="nopanel"   oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/^(\d*\.\d*).*$/, '$1'); calculatewp();"  required>
+                                        <label for=""> no.'s<span class="text-danger">*</span> &nbsp; </label>
+                                    <!--</div>-->
+                                    <!--<div class="form-group col-lg-2">-->
+                                        <label for=""> = &nbsp; </label>
+                                        <input type="text" id="totalno" name="totalWp" class="form-control2" readonly>
+                                        <label>kW</label>
+                                    </div>
+                                    <div class="form-group col-lg-4">
+                                        <label for=""> Warranty: </label>
+                                        <input type="text" class="form-control1" id="" name="panelWarranty" >
+                                    </div>
+                                    <div class="form-group col-lg-4">
+                                        <label for=""> Struc.: </label>
+                                        <input type="text" class="form-control1" id="" name="struc" >
+                                    </div>
+                                    <div class="form-group col-lg-4">
+                                        <label for=""> Max Ht.: </label>
+                                        <input type="text" class="form-control1" id="" name="maxHt" >
+                                    </div>
+                                    <div class="form-group col-lg-4">
+                                        <label for=""> Type: </label>
+                                        <input type="text" class="form-control1" id="" name="htType" >
+                                    </div>
+                                    <div class="form-group col-lg-3">
+                                        <label for=""> Protection AC :  </label>
+                                        <input type="text" class="form-control2" id="" name="protectionAc" >
+                                    </div>
+                                    <div class="form-group col-lg-3">
+                                        <label for=""> Protection DC :  </label>
+                                        <input type="text" class="form-control2" id="" name="protectionDc" >
+                                    </div>
+                                    <div class="form-group col-lg-3">
+                                        <label for=""> Protection LA : </label>
+                                        <input type="text" class="form-control2" id="" name="protectionLa" >
+                                    </div>
+                                    <div class="form-group col-lg-3">
+                                        <label for=""> Protection Earthing :  </label>
+                                        <input type="text" class="form-control2" id="" name="protectionEang" >
+                                    </div>
+                                    <div class="form-group col-lg-3">
+                                        <label for=""> Cables DC : </label>
+                                        <input type="text" class="form-control2" id="" name="cableDc" >
+                                    </div>
+                                    <div class="form-group col-lg-3">
+                                        <label for=""> Cables AC :  </label>
+                                        <input type="text" class="form-control2" id="" name="cableAc" >
+                                    </div>
+                                    <div class="form-group col-lg-3">
+                                        <label for=""> Cables LA :  </label>
+                                        <input type="text" class="form-control2" id="" name="cableLa" >
+                                    </div>
+                                    <div class="form-group col-lg-3">
+                                        <label for=""> Cables Earthing :  </label>
+                                        <input type="text" class="form-control2" id="" name="cableEang" >
+                                    </div>
+                                    <div class="form-group col-lg-3">
+                                        <label for=""> Order %: </label>
+                                        <input type="text" class="form-control2" id="" name="order1"  oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/^(\d*\.\d*).*$/, '$1');"   >
+                                    </div>
+                                    <div class="form-group col-lg-3">
+                                        <label for=""> Mat. Dispatch %: </label>
+                                        <input type="text" class="form-control2" id="" name="matDistp"  oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/^(\d*\.\d*).*$/, '$1');"   >
+                                    </div>
+                                    <div class="form-group col-lg-3">
+                                        <label for=""> Work Completion %: </label>
+                                        <input type="text" class="form-control2" id="" name="workComp"  oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/^(\d*\.\d*).*$/, '$1');"   >
+                                    </div>
+                                    <div class="form-group col-lg-3">
+                                        <label for=""> Net Metering %:</label>
+                                        <input type="text" class="form-control2" id="" name="netMatering"  oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/^(\d*\.\d*).*$/, '$1');"   >
+                                    </div>
+                                    <div class="form-group col-lg-12">
+                                        <label for=""> Days of Work completion after Sanction & Material Payment. </label>
+                                        <input type="text" class="form-control1" id="" name="materialPay" maxlength="15"  >
+                                    </div>
+                                    <div class="form-group col-lg-3">
+                                        <label for=""> Cost:<span class="text-danger">*</span> &nbsp; </label>
+                                        <input type="text" class="form-control1" id="cost" name="cost" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/^(\d*\.\d*).*$/, '$1'); calculatesub();" required>
+                                    </div>
+                                    <div class="form-group col-lg-3">
+                                        <label for=""> Subsidy:<span class="text-danger">*</span> &nbsp; </label>
+                                        <input type="text" class="form-control1" id="subsidy" name="subsidy" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/^(\d*\.\d*).*$/, '$1'); calculatesub();" required> 
+                                    </div>
+                                    <div class="form-group col-lg-3">
+                                        <label for=""> Effective: </label>
+                                        <input type="text" class="form-control1" id="effective" name="effective" readonly>
+                                    </div>
+                                    <div class="form-group col-lg-3">
+                                        <label for=""> GST: </label>
+                                        <input type="text" class="form-control1" id="" name="gst" >
+                                    </div>
+                                    <div class="form-group col-lg-12">
+                                        <label for=""> Other Expenses: </label>
+                                        <input type="text" class="form-control1" id="" name="otherExpens" >
+                                    </div>
+                                    </div>
+                                    
+                                    <div class="d-lg-block d-none">
+                                    <div class="row ">
+                                        <div class="col-lg-3 col-12 d-flex justify-content-center align-items-center g-20">
+                                            <p><b>Worship the Sun</b></p>
+                                            <img src="https://jksolarxpert.com/public/front/assets/images/icons/sun.png" width="50px">
+                                        </div>
+                                        <div class="col-lg-3 col-12 d-flex justify-content-center align-items-center g-20">
+                                            <p><b>Save Mother Earth</b></p>
+                                            <img src="https://jksolarxpert.com/public/front/assets/images/icons/earth.png" width="50px">
+                                        </div>
+                                        <div class="col-lg-3 col-12 d-flex justify-content-center align-items-center g-20">
+                                            <p><b>Earn Money</b></p>
+                                            <img src="https://jksolarxpert.com/public/front/assets/images/icons/rupee.png" width="60px">
+                                        </div>
+                                        <div class="col-lg-3 col-12 d-flex justify-content-center align-items-center g-20">
+                                            <p><b>Secure Future</b></p>
+                                            <img src="https://jksolarxpert.com/public/front/assets/images/icons/future.png" width="60px">
+                                        </div>
+                                    </div>
+                                    </div>
+                                    
+                                    <div class="row justify-content-center mt-4">
+                                        <div class="col-lg-4">
+                                            <div class="qq-box-1">
+                                                <p class="text-center qq-head-uij"><b>Environmental Benefits</b></p>
+                                                <div class="form-group">
+                                                    <label>Tons of CO2 Emission avoided in 25 years.</label>
+                                                    <input type="text" name="co2Emiss" id="emission" class="form-control3 w-100" readonly/>
+                                                </div>
+                                                <div class="form-group g-20">
+                                                    <label>Acre Planted </label>
+                                                    <input type="text" name="acrePlant" class="form-control3" id="acreplant" readonly/>
+                                                </div>
+                                                <div class="form-group g-20">
+                                                    <label>Tree Planted </label>
+                                                    <input type="text" name="treePlant" class="form-control3" id="treeplant" readonly/>
+                                                </div>
+                                                <div class="form-group g-20">
+                                                    <label>Kms not driven </label>
+                                                    <input type="text" name="drivenPlant" class="form-control3" id="driveplant" readonly/>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4">
+                                             <div class="qq-box-1">
+                                                <p class="text-center qq-head-uij"><b>Financial Calculation</b></p>
+                                               <div class="form-group row">
+                                                    <div class="col-3">
+                                                        <label class="w-100">Avg. Units:</label>
+                                                    </div>
+                                                    <div class="col-3 p-0">
+                                                        <input type="text" id="avgUnit" class="form-control3 w-70" readonly /> <!-- Example avgUnit value -->
+                                                        <label>x</label>
+                                                    </div>
+                                                    <div class="col-3 p-0">
+                                                        <input type="text" id="units" name="units" class="form-control3 w-70" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/^(\d*\.\d*).*$/, '$1'); calculateTotalAvgUnit();" />
+
+                                                        <label>=</label>
+                                                    </div>
+                                                    <div class="col-3">
+                                                        <input type="text" name="totalAvgUnit" id="totalAvgUnit" class="form-control3 w-100" readonly />
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row">
+                                                    <div class="col-3 ">
+                                                        <label class="w-100 ">Bill Amount:</label>
+                                                    </div>
+                                                    <div class="col-3 p-0">
+                                                        <input type="text" id="oldUnit" class="form-control3 w-70"  readonly/>
+                                                        <label>x</label>
+                                                    </div>
+                                                     <div class="col-3 p-0">
+                                                        <input type="text" id="rupessUnit" name="rupessUnit" class="form-control3 w-70" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/^(\d*\.\d*).*$/, '$1'); calculateTotalBillAmt()" required/>
+                                                        <label>=</label>
+                                                    </div>
+                                                     <div class="col-3">
+                                                         <input type="text" name="totalbillAmt" id="totalbillAmt" class="form-control3 w-100" readonly/>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group g-20">
+                                                    <label>ROI per annum(%): </label>
+                                                    <input type="text" id="roiAmt" name="roiAmt" class="form-control3" oninput="calculateTotalBillAmt()" readonly/>
+                                                </div>
+                                                <div class="form-group g-20">
+                                                    <label>Pay Back (months): </label>
+                                                    <input type="text" id="payback" name="payback" class="form-control3" readonly/>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4">
+                                             <div class="qq-box-1">
+                                                <p class="text-center qq-head-uij"><b>Multiply Your Savings</b></p>
+                                                <div class="form-group">
+                                                    <input type="text" id="saving"  class="form-control3" readonly/>
+                                                    <label>invested monthly for 25 years @ 7% becomes</label>
+                                                </div>
+                                                <div class="form-group g-20">
+                                                    <input type="text" name="invsavings1" id="invsavings1" class="form-control3 w-70" readonly/>
+                                                    <label>& @ 14%</label>
+                                                </div>
+                                                <div class="form-group g-20">
+                                                    <label>becomes </label>
+                                                    <input type="text" id="invsavings2" name="invsavings2" class="form-control3 w-100" readonly/>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="row mt-2">
+                                        <div class="col-12">
+                                            <p class="note-text text-justify"><span style="color:red;">*</span>Estimated calculations based on maximum use of solar energy by optimizing battery usage in non-solar hours As per manufacture's policy</p>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="row">
+                                    <div class="col-lg-12 mt-4">
+                                        <div class="form-group mb-3">
+                                            <label>Spl. Remark/ Docs Reqd. </label>
+                                            <input type="text" name="remark" class="form-control3 w-80" />
+                                        </div>
+                                        <p class="note-text text-justify "><b>Note : </b>Prices are valid for one week and subject to change due to dynamic market conditions. The completion timeline may vary based on our current workload and seasonal factors. The specifications and manufacturers mentioned are subject to change in case of non-availability or model updates. Any additional work/ insurance not included in this quote will incur extra charges based on actual costs. Net metering approvals, load changes, name changes, inspections, meter testing, and installations are within DISCOM's purview & subsidy disbursal in MNRE's purview. We will facilitate these processes as soon as possible, subject to DISCOM's approvals. We provide 5-year installation warranty and on-site service. Manufacturer warranties apply to panels and inverters. Ensuring clean and shadow-free panels is the customer's responsibility and crucial for optimal solar energy generation. For any queries, please feel free to contact Mr.</p> <input type="text" name="contactName" class="form-control3 inline" /> on <input type="text" name="contactPhone" maxlength="10" oninput="this.value = this.value.replace(/\D+/g, '')" class="form-control3 inline" />
+                                    </div>
+                                    </div>
+                                    
+                                    <div class="row mt-4">
+                                        <div class="col-lg-4">
+                                            <div class="form-group g-20">
+                                                    <label>Date:</label>
+                                                    <input type="date" name="date" class="form-control3 w-80" />
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4">
+                                            <div class="form-group g-20">
+                                                    <label>Qtn. By. </label>
+                                                    <input type="text" name="qtnBy" class="form-control3" />
+                                            </div>
+                                        </div>
+                                        <!--<div class="col-lg-2">-->
+                                        <!--    <div class="form-group g-20">-->
+                                        <!--            <label>Sign. </label>-->
+                                        <!--            <input type="text" class="form-control3" readonly/>-->
+                                        <!--    </div>-->
+                                        <!--</div>-->
+                                        <div class="col-lg-4">
+                                            <div class="form-group g-20">
+                                                    <label>Adv.Recvd. </label>
+                                                    <input type="text" name="advRecvd" class="form-control3" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/^(\d*\.\d*).*$/, '$1');" />
+                                            </div>
+                                        </div>
+                                        <!--<div class="col-lg-3">-->
+                                        <!--    <div class="form-group g-20">-->
+                                        <!--            <label>Cust Sign. </label>-->
+                                        <!--            <input type="text" class="form-control3" readonly/>-->
+                                        <!--    </div>-->
+                                        <!--</div>-->
+                                    </div>
+                                    
+                                    </div>
+                                    </div>
+                                </form>
+                                </div><!-- end #quote-to-download -->
+                                </div><!-- end col-12 -->
+                                </div><!-- end row -->
+                                
+                                <div class="row">
+                                    <div class="text-center mt-4">
+                                    <button id="downloadPdfBtn" type="button" class="link-anime v1 text-capital round-border-full" style="background-color: #27325C; margin-right: 10px;">⬇ DOWNLOAD PDF &nbsp; <i class="my-icon icon-arrow-top-right"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        </section>
+        </main>
+        <script>
+            // JavaScript function to calculate and display the result
+            function calculatewp() {
+                var wp = parseFloat(document.getElementById('wp').value);
+                var no = parseFloat(document.getElementById('nopanel').value);
+                
+                // Check if wp or no are valid numbers
+                if (isNaN(wp) || isNaN(no) || wp <= 0 || no <= 0) {
+                    document.getElementById('totalno').value = ''; // Clear the result if inputs are invalid
+                    return; // Stop if inputs are invalid
+                }
+            
+                // Perform the calculation: (wp * no) / 1000
+                var result = (wp * no) / 1000;
+            
+                // Display the result in the totalno input field with 2 decimal places
+                document.getElementById('totalno').value = result; // Rounded to 2 decimal places
+            
+                // Additional calculations for other fields
+                document.getElementById('emission').value = (result * 50);
+                document.getElementById('acreplant').value = (result * 0.8).toFixed(3);
+                document.getElementById('treeplant').value = (result * 350).toFixed(3);
+                document.getElementById('driveplant').value = (result * 163400);
+                
+                document.getElementById('avgUnit').value = result;
+                
+                //data
+                // var avg = parseFloat(document.getElementById('avg').value);
+                
+                // document.getElementById('units').value = avg; // Round to 2 decimal places for readability
+            
+                // // Check if wp or no are valid numbers
+                // if (isNaN(avg) || isNaN(result) || avg <= 0 || result <= 0) {
+                //     document.getElementById('totalAvgUnit').value = ''; // Clear the result if inputs are invalid
+                //     return; // Stop if inputs are invalid
+                // }
+                
+                //  var totalAvgUnit = result * avg;
+
+                // // Set the calculated totalAvgUnit in the corresponding input field
+                // document.getElementById('totalAvgUnit').value = totalAvgUnit; // Round to 2 decimal places
+                
+                // // Also set the calculated value in the 'oldUnit' field
+                // document.getElementById('oldUnit').value = totalAvgUnit; // Round to 2 decimal places
+            }
+            
+
+            
+            function calculatesub(){
+                var cost = parseFloat(document.getElementById('cost').value);
+                var subsidy = parseFloat(document.getElementById('subsidy').value);
+    
+                // Check if wp or no are valid numbers
+                if (isNaN(cost) || isNaN(subsidy) || cost <= 0) {
+                    document.getElementById('effective').value = ''; // Clear the result if inputs are invalid
+                    return; // Stop if inputs are invalid
+                }
+    
+                // Perform the calculation: (550 * wp * no) / 1000
+                var result = cost - subsidy;
+    
+                // Display the result in the totalno input field with 2 decimal places
+                document.getElementById('effective').value = result; // Rounded to 2 decimal places
+            }
+            
+            // Function to calculate totalAvgUnit
+            function calculateTotalAvgUnit() {
+                console.log('Function triggered');  // Debugging line
+                
+                var avgUnit = parseFloat(document.getElementById('avgUnit').value);
+                var units = parseFloat(document.getElementById('units').value);
+                
+                console.log('avgUnit:', avgUnit);  // Debugging line
+                console.log('units:', units);  // Debugging line
+        
+                if (isNaN(units) || units <= 0) {
+                    document.getElementById('units').value = ''; // Clear the result if inputs are invalid
+                    return; // Stop if inputs are invalid
+                }
+        
+                var totalAvgUnit = avgUnit * units;
+                console.log('totalAvgUnit:', totalAvgUnit);  // Log the result to the console
+                
+                document.getElementById('totalAvgUnit').value = totalAvgUnit; 
+                document.getElementById('oldUnit').value = totalAvgUnit; 
+            }
+
+            function calculateTotalBillAmt(){
+                
+                 // Get the 'units' value and parse it to a float number
+                var oldUnit = parseFloat(document.getElementById('oldUnit').value);
+                var rupessUnit = parseFloat(document.getElementById('rupessUnit').value);
+            
+                // Check if units is a valid number
+                if (isNaN(rupessUnit) || rupessUnit <= 0) {
+                    document.getElementById('rupessUnit').value = ''; // Clear the result if inputs are invalid
+                    return; // Stop if inputs are invalid
+                }
+            
+                // Calculate totalAvgUnit based on 'result' and 'units'
+                var totalbillAmt = oldUnit * rupessUnit;
+            
+                // Set the calculated totalAvgUnit in the corresponding input field
+                document.getElementById('totalbillAmt').value = totalbillAmt; // Round to 2 decimal places for better readability
+                
+                
+                var effecAmt = parseFloat(document.getElementById('effective').value);
+
+                // Validate 'effective' value
+                if (isNaN(effecAmt) || effecAmt <= 0) {
+                    document.getElementById('effective').value = ''; // Clear if invalid
+                    return; // Stop if 'effective' is invalid
+                }
+                
+                // Calculate ROI amount: totalbillAmt / effecAmt * 1200
+                var roiperAnnu = (totalbillAmt / effecAmt) * 1200;
+                var roiperAnnuRounded = roiperAnnu.toFixed(2);
+
+                // Set the calculated ROI percentage in the corresponding input field
+                document.getElementById('roiAmt').value = roiperAnnuRounded + '%';
+                
+                
+                //pay balance
+                document.getElementById('payback').value = (effecAmt / totalbillAmt).toFixed(2);
+                 
+                // invsavings1
+                document.getElementById('saving').value = totalbillAmt;
+                document.getElementById('invsavings1').value = (totalbillAmt * 814.8).toFixed(2);
+                document.getElementById('invsavings2').value = (totalbillAmt * 2727.28).toFixed(2);
+            }
+        </script>
+    <!-- jQuery -->
+    <script src="https://jksolarxpert.com/public/front/assets/js/jquery-3.7.1.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="https://jksolarxpert.com/public/front/assets/js/bootstrap.min.js"></script>
+    <!-- Plugins -->
+    <script src="https://jksolarxpert.com/public/front/assets/js/plugins.js"></script>
+    <!-- Index -->
+    <script src="https://jksolarxpert.com/public/front/assets/js/index.min.js"></script>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css" integrity="sha512-vKMx8UnXk60zUwyUnUPM3HbQo8QfmNx7+ltw8Pm5zLusl1XIfwcxo8DbWCqMGKaWeNxWA8yrx5v3SaVpMvR3CA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js" integrity="sha512-VEd+nq25CkR676O+pLBnDW09R7VQX9Mdiij052gVCp5yVH3jGtH70Ho/UUv4mJDsEdTvqRCFZg0NKGiojGnUCw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+    toastr.options = {
+            "positionClass": "toast-bottom-right",
+            "timeOut": "5000", // Duration the toast will be displayed
+            "extendedTimeOut": "1000", // Extended duration if user interacts
+            "closeButton": true, // Display close button
+            "progressBar": true // Display progress bar
+        }
+</script>
+<script>
+  document.querySelector('.menu-toggle').addEventListener('click', function() {
+    document.querySelector('.sidebar').classList.toggle('active');
+  });
+  document.querySelector('.menu-close').addEventListener('click', function() {
+    document.querySelector('.sidebar').classList.toggle('active');
+  });
+</script>
+    
+<!-- ══════════════════════════════════════════════
+     PRINT-ONLY VIEW  —  hidden on screen, shown on print
+     JS populates it from form values before window.print()
+     ══════════════════════════════════════════════ -->
+<div id="print-view">
+
+  <!-- Header images -->
+  <img class="pv-header" src="assets/images/JKPGQQ_HEAD.jpg" alt="JK Powerguard Header">
+  <img class="pv-header" src="https://jksolarxpert.com/public/front/assets/images/home/quick-quote-from-header.png" alt="Quick Quote Header">
+
+  <!-- Tagline -->
+  <p class="pv-tagline"><b>Simplifying Solar Solutions :</b> We believe in transparency and clarity. That's why we don't overwhelm our clients with lengthy, multi pager &amp; complicated quotes. We handle the complex analysis &amp; provide an easy-to-understand, eco-friendly quote.</p>
+
+  <!-- Main data table -->
+  <table class="pv-table">
+    <tr>
+      <td class="pv-num">1</td>
+      <td colspan="3"><span class="pv-label">Cons. Name :</span> <span id="pv-cusName"></span></td>
+      <td colspan="3"><span class="pv-label">Cons. No.:</span> <span id="pv-cusPhone"></span></td>
+    </tr>
+    <tr>
+      <td class="pv-num">2</td>
+      <td colspan="3"><span class="pv-label">Sancn. Load :</span> <span id="pv-sancnLoad"></span></td>
+      <td colspan="3"><span class="pv-label">Any Change :</span> <span id="pv-anyChange"></span></td>
+    </tr>
+    <tr>
+      <td class="pv-num">3</td>
+      <td><span class="pv-label">Units: Peak :</span> <span id="pv-peak"></span></td>
+      <td><span class="pv-label">Avg. :</span> <span id="pv-avg"></span></td>
+      <td><span class="pv-label">Sugg. :</span> <span id="pv-sugg"></span> / <span id="pv-sugg1"></span></td>
+      <td colspan="3"><span class="pv-label">Finalised:</span> <span id="pv-finalised"></span> / <span id="pv-finalised1"></span></td>
+    </tr>
+    <tr>
+      <td class="pv-num">4</td>
+      <td><span class="pv-label">Inverter :</span> <span id="pv-inverter"></span></td>
+      <td><span class="pv-label">Rating :</span> <span id="pv-rating"></span></td>
+      <td><span class="pv-label">Battery:</span> <span id="pv-battery"></span></td>
+      <td colspan="3"><span class="pv-label">Warr. :</span> <span id="pv-warranty"></span></td>
+    </tr>
+    <tr>
+      <td class="pv-num">5</td>
+      <td><span class="pv-label">Panel :</span> <span id="pv-panel"></span></td>
+      <td><span class="pv-label">Type :</span> <span id="pv-type"></span></td>
+      <td colspan="2"><span id="pv-wp"></span> Wp x <span id="pv-nopanel"></span> No.'s = <span id="pv-totalno"></span> kW</td>
+      <td colspan="2"><span class="pv-label">Warr:</span> <span id="pv-panelWarranty"></span></td>
+    </tr>
+    <tr>
+      <td class="pv-num">6</td>
+      <td colspan="2"><span class="pv-label">Struc. :</span> <span id="pv-struc"></span></td>
+      <td colspan="2"><span class="pv-label">Max Ht.:</span> <span id="pv-maxHt"></span></td>
+      <td colspan="2"><span class="pv-label">Type :</span> <span id="pv-htType"></span></td>
+    </tr>
+    <tr>
+      <td class="pv-num">7</td>
+      <td colspan="1"><span class="pv-label">Protection:</span></td>
+      <td><span class="pv-label">DC</span> – <span id="pv-protectionDc"></span></td>
+      <td><span class="pv-label">LA</span> – <span id="pv-protectionLa"></span></td>
+      <td colspan="3"><span class="pv-label">Earthing</span> – <span id="pv-protectionEang"></span></td>
+    </tr>
+    <tr>
+      <td class="pv-num">8</td>
+      <td colspan="1"><span class="pv-label">Cables:</span></td>
+      <td><span class="pv-label">AC</span> – <span id="pv-cableAc"></span></td>
+      <td><span class="pv-label">LA</span> – <span id="pv-cableLa"></span></td>
+      <td colspan="3"><span class="pv-label">Earthing</span> – <span id="pv-cableEang"></span></td>
+    </tr>
+    <tr>
+      <td class="pv-num">9</td>
+      <td><span class="pv-label">Pay:</span></td>
+      <td><span id="pv-order1"></span>% Order,</td>
+      <td><span id="pv-matDistp"></span>% Mat. Dispatch,</td>
+      <td><span id="pv-workComp"></span>% Work Completion,</td>
+      <td colspan="2"><span id="pv-netMatering"></span>% Net Metering</td>
+    </tr>
+    <tr>
+      <td class="pv-num">10</td>
+      <td colspan="6"><span class="pv-label">Timeframe :</span> <span id="pv-materialPay"></span> days for work Completion after Sanction &amp; Material Payment.</td>
+    </tr>
+    <tr>
+      <td class="pv-num">11</td>
+      <td colspan="2"><span class="pv-label">Cost :</span> <span id="pv-cost"></span></td>
+      <td><span class="pv-label">Subsidy :</span> <span id="pv-subsidy"></span></td>
+      <td><span class="pv-label">Effective :</span> <span id="pv-effective"></span></td>
+      <td colspan="2"><span class="pv-label">GST :</span> <span id="pv-gst"></span></td>
+    </tr>
+    <tr>
+      <td class="pv-num">12</td>
+      <td colspan="6"><span class="pv-label">Other Expenses :</span> <span id="pv-otherExpens"></span></td>
+    </tr>
+  </table>
+
+  <!-- Disclaimer -->
+  <p class="pv-disclaimer"><span style="color:red;font-weight:bold;">*</span> Estimated calculations based on maximum use of solar energy by optimizing battery usage in non-solar hours &nbsp;<b>*As per manufacture's policy</b></p>
+
+  <!-- Icons row -->
+  <div class="pv-icons">
+    <span><b>Worship the Sun</b> <img src="https://jksolarxpert.com/public/front/assets/images/icons/sun.png" alt="sun"></span>
+    <span><b>Save Mother Earth</b> <img src="https://jksolarxpert.com/public/front/assets/images/icons/earth.png" alt="earth"></span>
+    <span><b>Earn Money</b> <img src="https://jksolarxpert.com/public/front/assets/images/icons/rupee.png" alt="rupee"></span>
+    <span><b>Secure Future</b> <img src="https://jksolarxpert.com/public/front/assets/images/icons/future.png" alt="future"></span>
+  </div>
+
+  <!-- Three-column summary boxes -->
+  <div class="pv-boxes">
+    <div class="pv-box">
+      <div class="pv-box-head">Environmental Benefits</div>
+      <div id="pv-emission"></div> Tons of CO₂ emission avoided in 25 years<br>
+      Acre planted – <span id="pv-acreplant"></span><br>
+      <span id="pv-treeplant"></span> Trees planted<br>
+      <span id="pv-driveplant"></span> kms not driven
+    </div>
+    <div class="pv-box">
+      <div class="pv-box-head">Financial Calculation</div>
+      Avg. Units: <span id="pv-avgUnit"></span> x <span id="pv-units"></span> = <span id="pv-totalAvgUnit"></span><br>
+      Bill Amount: <span id="pv-oldUnit"></span> x <span id="pv-rupessUnit"></span> = Rs. <span id="pv-totalbillAmt"></span><br>
+      ROI per annum (%): <span id="pv-roiAmt"></span><br>
+      Pay Back (months): <span id="pv-payback"></span>
+    </div>
+    <div class="pv-box">
+      <div class="pv-box-head">Multiply Your Savings</div>
+      Rs. <span id="pv-saving"></span> invested monthly for 25 years @ 7% becomes Rs. <span id="pv-invsavings1"></span><br>
+      &amp; @ 14% becomes Rs. <span id="pv-invsavings2"></span>
+    </div>
+  </div>
+
+  <!-- Spl Remark + Note -->
+  <p class="pv-remark"><b>Spl. Remark/Docs Reqd.</b> <span id="pv-remark"></span></p>
+  <p class="pv-note"><b>Note :</b> Prices are valid for one week and subject to change due to dynamic market conditions. The completion timeline may vary based on our current workload and seasonal factors. The specifications and manufacturers mentioned are subject to change in case of non-availability or model updates. Any additional work/ insurance not included in this quote will incur extra charges based on actual costs. Net metering approvals, load changes, name changes, inspections, meter testing, and installations are within DISCOM's purview &amp; subsidy disbursal in MNRE's purview. We will facilitate these processes as soon as possible, subject to DISCOM's approvals. We provide 5-year installation warranty and on-site service. Manufacturer warranties apply to panels and inverters. Ensuring clean and shadow-free panels is the customer's responsibility and crucial for optimal solar energy generation. For any queries, please feel free to contact Mr. <span id="pv-contactName"></span> on <span id="pv-contactPhone"></span></p>
+
+  <!-- Signature row -->
+  <table class="pv-sig-table">
+    <tr>
+      <td>Date.<br><span id="pv-date" style="font-weight:normal;text-decoration:none;font-size:8pt;"></span></td>
+      <td>Qtn. By.<br><span id="pv-qtnBy" style="font-weight:normal;text-decoration:none;font-size:8pt;"></span></td>
+      <td>Sign.</td>
+      <td>Adv. Recvd.<br><span id="pv-advRecvd" style="font-weight:normal;text-decoration:none;font-size:8pt;"></span></td>
+      <td>Cust. Sign</td>
+    </tr>
+  </table>
+
+</div><!-- end #print-view -->
+
+<script>
+  // Map: form field name/id → print-view span id
+  var PV_FIELDS = [
+    ['cusName',       'cusName',       'id'],
+    ['cusPhone',      'cusPhone',      'id'],
+    ['sancnLoad',     'sancnLoad',     'id'],
+    ['anyChange',     'anyChange',     'id'],
+    ['peak',          'peak',          'id'],
+    ['avg',           'avg',           'id'],
+    ['sugg',          'sugg',          'name'],
+    ['sugg1',         'sugg1',         'name'],
+    ['finalised',     'finalised',     'name'],
+    ['finalised1',    'finalised1',    'name'],
+    ['inverter',      'inverter',      'name'],
+    ['rating',        'rating',        'name'],
+    ['battery',       'battery',       'name'],
+    ['warranty',      'warranty',      'name'],
+    ['panel',         'panel',         'name'],
+    ['type',          'type',          'name'],
+    ['wp',            'wp',            'id'],
+    ['nopanel',       'nopanel',       'id'],
+    ['totalno',       'totalno',       'id'],
+    ['panelWarranty', 'panelWarranty', 'name'],
+    ['struc',         'struc',         'name'],
+    ['maxHt',         'maxHt',         'name'],
+    ['htType',        'htType',        'name'],
+    ['protectionDc',  'protectionDc',  'name'],
+    ['protectionLa',  'protectionLa',  'name'],
+    ['protectionEang','protectionEang','name'],
+    ['cableAc',       'cableAc',       'name'],
+    ['cableLa',       'cableLa',       'name'],
+    ['cableEang',     'cableEang',     'name'],
+    ['order1',        'order1',        'name'],
+    ['matDistp',      'matDistp',      'name'],
+    ['workComp',      'workComp',      'name'],
+    ['netMatering',   'netMatering',   'name'],
+    ['materialPay',   'materialPay',   'name'],
+    ['cost',          'cost',          'id'],
+    ['subsidy',       'subsidy',       'id'],
+    ['effective',     'effective',     'id'],
+    ['gst',           'gst',           'name'],
+    ['otherExpens',   'otherExpens',   'name'],
+    ['emission',      'emission',      'id'],
+    ['acreplant',     'acreplant',     'id'],
+    ['treeplant',     'treeplant',     'id'],
+    ['driveplant',    'driveplant',    'id'],
+    ['avgUnit',       'avgUnit',       'id'],
+    ['units',         'units',         'id'],
+    ['totalAvgUnit',  'totalAvgUnit',  'id'],
+    ['oldUnit',       'oldUnit',       'id'],
+    ['rupessUnit',    'rupessUnit',    'id'],
+    ['totalbillAmt',  'totalbillAmt',  'id'],
+    ['roiAmt',        'roiAmt',        'id'],
+    ['payback',       'payback',       'id'],
+    ['saving',        'saving',        'id'],
+    ['invsavings1',   'invsavings1',   'id'],
+    ['invsavings2',   'invsavings2',   'id'],
+    ['remark',        'remark',        'name'],
+    ['contactName',   'contactName',   'name'],
+    ['contactPhone',  'contactPhone',  'name'],
+    ['date',          'date',          'name'],
+    ['qtnBy',         'qtnBy',         'name'],
+    ['advRecvd',      'advRecvd',      'name'],
+  ];
+
+  function populatePrintView() {
+    PV_FIELDS.forEach(function(f) {
+      var key = f[0], pvId = f[1], method = f[2];
+      var src = method === 'id'
+        ? document.getElementById(key)
+        : document.querySelector('[name="' + key + '"]');
+      var dest = document.getElementById('pv-' + pvId);
+      if (src && dest) {
+        dest.textContent = src.value || '';
+      }
+    });
+  }
+
+  document.getElementById('downloadPdfBtn').addEventListener('click', function() {
+    populatePrintView();
+    window.print();
+  });
+</script>
+</body>
+</html>
